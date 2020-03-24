@@ -1,0 +1,5 @@
+viberbot
+sqlalchemy
+flask
+psycopg2
+APScheduler
