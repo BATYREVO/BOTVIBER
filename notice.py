@@ -1,4 +1,4 @@
-import datetime
+﻿import datetime
 import json
 import random
 
@@ -21,7 +21,7 @@ def notice_job():
         .outerjoin(bot_users.bot_users_answers) \
         .group_by(bot_users) \
         .having(and_(func.current_timestamp(type_=types.DateTime) - func.max(bot_users_answers.answer_date) > coalesce(
-        bot_users.notice_time, '00:30:00'), bot_users.is_notice_need)) \
+        bot_users.notice_time, '00:01:00'), bot_users.is_notice_need)) \
         .all()
     for u in us:
         message = [TextMessage(text=random.choice(hello_messages) + " " + u.name + "! Вы не забыли об обучении? (hmm)"),

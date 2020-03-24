@@ -6,10 +6,10 @@ from viber_bot import viber_bot
 
 app = Flask(__name__)
 viber = Api(BotConfiguration(
-    name='Bilinhual',
+    name='XON',
     avatar='https://dl-media.viber.com/1/share/2/long/vibes/icon/image/0x0/f09b'
            '/fc477e80d5306023ccf92a07170886fee98bba96aca04959700207a62cc6f09b.jpg',
-    auth_token='4ac9ce371e67d30e-9dc412b2061eb971-fb15ec32858c9525'
+    auth_token='4b231b604267d24e-d830fc6e7126277a-a1720ec63a7aa5bc'
 ))
 
 
